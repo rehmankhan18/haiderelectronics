@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haider Electronics</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav {
+            background: #004085;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .stat-box {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .stat-box:hover {
+            transform: scale(1.05);
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin: 0;
+        }
+        .product-card p {
+            padding: 10px;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .about, .contact {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Haider Electronics</h1>
+        <p>Your Trusted Electronics Partner for Quality & Service</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#stats">Statistics</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="stats">
+            <h2>Our Statistics</h2>
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>Customers</h3>
+                    <p>1,200+</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Paid Installments</h3>
+                    <p>3,500+</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Products Sold</h3>
+                    <p>5,000+</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Branches</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200" alt="LED TV">
+                    <h3>LED TV</h3>
+                    <p>Starting from PKR 35,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Refrigerator">
+                    <h3>Refrigerator</h3>
+                    <p>Starting from PKR 45,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Washing Machine">
+                    <h3>Washing Machine</h3>
+                    <p>Starting from PKR 25,000</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/250x200" alt="Microwave Oven">
+                    <h3>Microwave Oven</h3>
+                    <p>Starting from PKR 12,000</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>Haider Electronics has been serving customers since 2005 with premium quality electronics at competitive prices. We offer easy installment plans, professional service, and nationwide delivery. Our mission is to make technology accessible and affordable for every household in Pakistan.</p>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@haiderelectronics.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Address: Johar Town, Lahore, Pakistan</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Haider Electronics | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
